@@ -8,5 +8,3 @@ resto = quantidade_dia % caixa_maca
 
 print(producao_caixa)
 print(resto)
-
-"""nao consegui resultado exato com numero inteiro da divisao."""

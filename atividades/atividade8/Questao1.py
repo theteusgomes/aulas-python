@@ -1,13 +1,20 @@
+media_aprovacao = 7
+nome = input("Qual o seu nome? \n")
+def media_final():
+    print("Calculo da média")
+    nota1 = int(input("Digite a nota do primeiro bimestre: "))
+    nota2 = int(input("Digite a nota do segundo bimestre: "))
+    nota3 = int(input("Digite a nota do terceiro bimeste: "))
+    nota4 = int(input("Digite a nota do quarto bimestre: "))
+    return (nota1 + nota2 + nota3 + nota4)/4
+
+resultado = media_final()
+
+print(f"A média final do aluno {nome} foi de: ", resultado)
+
+if resultado > media_aprovacao:
+    print("Aluno aprovado.")
+else:
+    print("Aluno reprovado.")
 
 
-def media_notas(nota1, nota2, nota3):
-   return (nota1 + nota2 + nota3)/3
-
-print("Calculo da média")
-nota1 = float(input("Digite a primeira nota: "))
-nota2 = float(input("Digite a segunda nota: "))
-nota3 = float(input("Digite a terceira nota: "))
-
-media = media_notas(nota1, nota2, nota3)
-
-print(f"A média foi de: {media:.2f}")

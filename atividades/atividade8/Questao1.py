@@ -6,6 +6,7 @@ def media_final():
     nota2 = int(input("Digite a nota do segundo bimestre: "))
     nota3 = int(input("Digite a nota do terceiro bimeste: "))
     nota4 = int(input("Digite a nota do quarto bimestre: "))
+    print (f"As notas desse aluno foram: {nota1, nota2, nota3, nota4}")
     return (nota1 + nota2 + nota3 + nota4)/4
 
 resultado = media_final()
